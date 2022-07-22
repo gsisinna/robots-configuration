@@ -27,19 +27,44 @@
         <param name="rotorPosMin">              0           0               0              0           </param> 
     </group>
 
-    <group name="COUPLINGS"> 
+    <!-- <group name="COUPLINGS"> 
                 
         <param name ="matrixJ2M"> 
             1.000   0.000   0.000   0.000
             0.000   1.000   0.000   0.000
-            0.000   0.000  +1.000   0.000
+            0.000   0.000   1.000   0.000
             0.000   0.000   0.000   1.000   
         </param>
            
         <param name ="matrixM2J"> 
             1.000   0.000   0.000   0.000
             0.000   1.000   0.000   0.000
-            0.000   0.000  +1.000   0.000
+            0.000   0.000   1.000   0.000
+            0.000   0.000   0.000   1.000   
+        </param>
+    
+        <param name ="matrixE2J">  
+            1.000   0.000   0.000   0.000   0.000   0.000
+            0.000   1.000   0.000   0.000   0.000   0.000
+            0.000   0.000   1.000   0.000   0.000   0.000
+            0.000   0.000   0.000   1.000   0.000   0.000   
+        </param>
+                
+    </group> -->
+
+    <group name="COUPLINGS"> 
+                
+        <param name ="matrixJ2M"> 
+            1.000   0.000   0.000   0.000
+            0.000   1.000   0.000   0.000
+            0.000  -1.000   1.000   0.000
+            0.000   0.000   0.000   1.000   
+        </param>
+           
+        <param name ="matrixM2J"> 
+            1.000   0.000   0.000   0.000
+            0.000   1.000   0.000   0.000
+            0.000   1.000   1.000   0.000
             0.000   0.000   0.000   1.000   
         </param>
 
@@ -50,7 +75,7 @@
             0.000   0.000   0.000   1.000   0.000   0.000   
         </param>
                 
-    </group>      
+    </group>
 
     <group name="JOINTSET_CFG"> 
         <param name= "numberofsets"> 3</param>
@@ -72,5 +97,35 @@
                     <param name="param1">         0             </param>
                     <param name="param2">         0             </param>
             </group> 
-    </group>              
+    </group>
+    
+    <!-- <group name="JOINTSET_CFG"> 
+        <param name= "numberofsets"> 4 </param>
+            <group name="JOINTSET_0">
+                    <param name="listofjoints">  0             </param>
+                    <param name="constraint">    none          </param>
+                    <param name="param1">        0             </param>
+                    <param name="param2">        0             </param>
+            </group> 
+            <group name="JOINTSET_1">
+                    <param name="listofjoints">   1             </param>
+                    <param name="constraint">     none          </param>
+                    <param name="param1">         0             </param>
+                    <param name="param2">         0             </param>
+            </group> 
+            <group name="JOINTSET_2">
+                    <param name="listofjoints">   2             </param>
+                    <param name="constraint">     none          </param>
+                    <param name="param1">         0             </param>
+                    <param name="param2">         0             </param>
+            </group> 
+            <group name="JOINTSET_3">
+                <param name="listofjoints">   3             </param>
+                <param name="constraint">     none          </param>
+                <param name="param1">         0             </param>
+                <param name="param2">         0             </param>
+            </group>
+    </group> -->
+
+
 </params>
