@@ -25,10 +25,10 @@
 <param name="calibration4">              0         0          0         0       0       0         </param>
 <param name="calibration5">              0         0          0         0       0       0         </param>
 <param name="calibrationZero">           0         0          0         0       0       0         </param>
-<param name="calibrationDelta">          0         0          0         0       0       0         </param>
+<param name="calibrationDelta">       -3.5         0          0         0       0       0         </param>
 
 
-<param name="startupPosition">           0         10          0         0       0       0         </param>
+<param name="startupPosition">           0         0          0         0       0       0         </param>
 <param name="startupVelocity">           5         5          10        10      10      10        </param>
 <param name="startupMaxPwm">             3500      3500       3500      3500    3500    3500      </param>
 <param name="startupPosThreshold">       2         2          2         2       2       2         </param>
